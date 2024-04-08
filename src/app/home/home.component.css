@@ -1,0 +1,86 @@
+.fullcontainer {
+  display: flex;
+  justify-content: center;
+  width: 98.7vw;
+  height: 595px;
+  background-color: rgb(233, 233, 233);
+}
+
+.container {
+  width: 90vw;
+  height: 40vw;
+  background-color: #fff;
+  margin-top: 30px;
+  display: flex;
+  border-radius: 10px;
+  border: solid 0.5px gray;
+  align-items: center; /* Menyusun elemen secara vertikal di tengah container */
+}
+.menu {
+  text-align: center;
+  width: 90vw;
+  height: 60px;
+  position: absolute;
+  top: 30px;
+  border: solid 0.5px gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.title {
+  margin-left: 60px;
+  font-weight: 800;
+}
+
+.nama {
+  font-size: 32px; /* Mengatur ukuran font */
+  display: flex;
+  position: relative; /* Menjadikan posisi relative untuk memudahkan penempatan hover-text */
+}
+
+.highlight {
+  margin-right: 5px; /* Jarak antara highlight */
+  font-size: 32px;
+  transition: transform 0.3s, margin 0.3s; /* Transisi transformasi dan margin untuk .highlight */
+}
+
+.hover-text {
+  margin-left: 300px;
+  position: absolute; /* Mengatur posisi absolut untuk hover-text */
+  top: 0px; /* Mengatur posisi di atas .nama */
+  left: 0; /* Menjadikan posisi di sebelah kiri .nama */
+  opacity: 0; /* Mengatur opacity menjadi 0 agar tidak terlihat */
+  transition: opacity 0.3s, transform 0.6s; /* Transisi opacity dan transform untuk hover-text */
+  transform: translateY(0); /* Menggeser hover-text ke atas di luar viewport */
+}
+
+.nama:hover .hover-text {
+  opacity: 1; /* Mengatur opacity menjadi 1 saat .nama dihover */
+  transform: translateY(-100%);
+  background: -webkit-linear-gradient(#b7e9ff, #12c8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lingkaran-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.lingkaran {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 10px;
+  /* Jarak antar lingkaran */
+}
+
+.merah {
+  background-color: rgb(255, 69, 69);
+}
+
+.kuning {
+  background-color: rgb(255, 205, 56);
+}
+
+.hijau {
+  background-color: rgb(50, 255, 64);
+}
