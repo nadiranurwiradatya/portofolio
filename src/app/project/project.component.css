@@ -8,6 +8,8 @@
 }
 
 .container {
+  padding-bottom: 10px;
+  justify-content: center;
   width: 90vw;
   height: 40vw;
   background-color: #fff;
@@ -21,7 +23,24 @@
   border-radius: 10px;
   border: solid 0.5px gray;
   align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden; /* Menambahkan scroll vertikal saja */
 }
+
+/* Ubah tampilan scrollbar */
+.container::-webkit-scrollbar {
+  width: 10px; /* Lebar scrollbar */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Warna thumb scrollbar */
+  border-radius: 10px; /* Border radius thumb scrollbar */
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1); /* Warna track scrollbar */
+}
+
 .menu {
   text-align: center;
   width: 90vw;
@@ -78,15 +97,15 @@
 }
 
 .merah {
-  background-color: #ff605c;
+  background-color: rgb(255, 69, 69);
 }
 
 .kuning {
-  background-color: #ffbd44;
+  background-color: rgb(255, 205, 56);
 }
 
 .hijau {
-  background-color: #00ca4e;
+  background-color: rgb(50, 255, 64);
 }
 .about p {
   margin-top: 19px;
@@ -112,6 +131,9 @@
 }
 
 .home {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
   height: 55px;
   width: 100px;
   position: absolute;
@@ -120,17 +142,14 @@
   left: 16.25%;
   color: var(--text-foreground);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 }
 .home p {
   margin-top: 19px;
 }
 .project {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   height: 55px;
   width: 100px;
   position: absolute;
@@ -166,4 +185,54 @@
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+}
+.project-container {
+  margin-top: 200px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Menyesuaikan jumlah kolom dengan lebar card dan container */
+  gap: 10px; /* Spasi antar card */
+  width: 900px; /* Maksimum lebar container */
+}
+.card {
+  width: 190px;
+  height: 254px;
+  margin: 0 auto;
+  background-color: #011522;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
 }
