@@ -1,39 +1,33 @@
 <div class="fullcontainer">
-  <div class="container">
-    <div class="menu">
-      <div class="lingkaran-container">
-        <div class="lingkaran merah"></div>
-        <div class="lingkaran kuning"></div>
-        <div class="lingkaran hijau"></div>
-      </div>
-      <div class="home" (click)="goToHome()">
-        <p>Home</p>
-      </div>
-      <div class="about">
-        <p>About</p>
-      </div>
-      <div class="project">
-        <p>Project</p>
-      </div>
-      <div class="contact">
-        <p>Contact</p>
-      </div>
+  <header class="menu">
+    <div class="lingkaran-container">
+      <div class="lingkaran merah"></div>
+      <div class="lingkaran kuning"></div>
+      <div class="lingkaran hijau"></div>
     </div>
-    <div class="project-container">
-      <div class="card" *ngFor="let project of projectList">
-        <p>{{ project.nickname }}</p>
-        <div class="tools">
-          <div class="circle">
-            <span class="red box"></span>
-          </div>
-          <div class="circle">
-            <span class="yellow box"></span>
-          </div>
-          <div class="circle">
-            <span class="green box"></span>
-          </div>
+    <div class="home" (click)="goToHome()">
+      <p>Home</p>
+    </div>
+    <div class="about">
+      <p>About</p>
+    </div>
+    <div class="project">
+      <p>Project</p>
+    </div>
+    <div class="contact">
+      <p>Contact</p>
+    </div>
+  </header>
+  <div class="container">
+    <div class="box-container">
+      <div class="project-container" *ngFor="let project of projectList">
+        <div class="card">
+          <div
+            class="image_container"
+            [style.backgroundImage]="'url(' + project.imageUrl + ')'"
+          ></div>
+          <div class="project-title">{{ project.title }}</div>
         </div>
-        <div class="card__content"></div>
       </div>
     </div>
   </div>
