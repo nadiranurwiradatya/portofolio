@@ -1,32 +1,23 @@
 <div class="fullcontainer">
+  <app-sidebar></app-sidebar>
   <header class="menu">
     <div class="lingkaran-container">
       <div class="lingkaran merah"></div>
       <div class="lingkaran kuning"></div>
       <div class="lingkaran hijau"></div>
     </div>
-    <div class="home" (click)="goToHome()">
-      <p>Home</p>
-    </div>
-    <div class="about">
-      <p>About</p>
-    </div>
-    <div class="project">
-      <p>Project</p>
-    </div>
-    <div class="contact">
-      <p>Contact</p>
-    </div>
   </header>
   <div class="container">
     <div class="box-container">
       <div class="project-container" *ngFor="let project of projectList">
         <div class="card">
-          <div
-            class="image_container"
-            [style.backgroundImage]="'url(' + project.imageUrl + ')'"
-          ></div>
-          <div class="project-title">{{ project.title }}</div>
+          <div class="image_container">
+            <div class="project-title">{{ project.title }}</div>
+            <div
+              class="image-cover"
+              [style.backgroundImage]="'url(' + project.imageUrl + ')'"
+            ></div>
+          </div>
         </div>
       </div>
     </div>

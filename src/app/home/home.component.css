@@ -9,7 +9,7 @@
 
 .container {
   width: 90vw;
-  height: 40vw;
+  height: 39vw;
   background-color: #fff;
   margin-top: 30px;
   background: rgba(255, 255, 255, 0.25);
@@ -22,105 +22,7 @@
   border: solid 0.5px gray;
   align-items: center;
 }
-.sidebar-container {
-  position: absolute;
-  top: 55px;
-  height: 457px;
-  width: 150px;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
-  border-bottom-left-radius: 10px;
-}
-.sidebar {
-  display: grid;
-  position: relative;
-  top: 55px;
-}
-.about p {
-  margin-top: 5px;
-  margin-left: 50px;
-  transition: all 1s ease;
-}
-.about {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
-  height: 25px;
-  width: 150px;
-  /* position: absolute;
-  top: 0px;
-  left: 25%; */
-  transition: background 0.3s ease, backdrop-filter 0.3s ease,
-    -webkit-backdrop-filter 0.3s ease; /* Menambahkan transisi untuk semua properti yang berubah */
-}
 
-.about:hover {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-
-.home {
-  height: 25px;
-  width: 150px;
-
-  border-right: solid #656565 1px;
-  /* position: absolute;
-  top: 0px;
-  left: 16.25%; */
-  color: var(--text-foreground);
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.home p {
-  margin-top: 5px;
-  margin-left: 50px;
-}
-.project {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
-  height: 25px;
-  width: 150px;
-  /* position: absolute;
-  top: 0px;
-  left: 33.75%; */
-  transition: background 0.3s ease, backdrop-filter 0.3s ease,
-    -webkit-backdrop-filter 0.3s ease; /* Menambahkan transisi untuk semua properti yang berubah */
-}
-.project p {
-  margin-top: 5px;
-  margin-left: 50px;
-}
-.project:hover {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.contact {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
-  height: 25px;
-  width: 150px;
-  /* position: absolute;
-  top: 0px;
-  left: 42.5%; */
-  transition: background 0.3s ease, backdrop-filter 0.3s ease,
-    -webkit-backdrop-filter 0.3s ease; /* Menambahkan transisi untuk semua properti yang berubah */
-}
-.contact p {
-  margin-top: 5px;
-  margin-left: 50px;
-}
-.contact:hover {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
 .menu {
   text-align: center;
   width: 90vw;
@@ -132,7 +34,7 @@
   border-top-right-radius: 10px;
 }
 .title {
-  margin-left: 60px;
+  margin-left: 310px;
   font-weight: 500;
 }
 
@@ -150,7 +52,7 @@
 .hover-text {
   margin-left: 300px;
   position: absolute;
-  top: 0px;
+  top: px;
   left: 0;
   opacity: 0;
   transition: opacity 0.3s, transform 0.6s;
