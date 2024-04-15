@@ -12,11 +12,16 @@
       <div class="project-container" *ngFor="let project of projectList">
         <div class="card">
           <div class="image_container">
-            <div class="project-title">{{ project.title }}</div>
+            <div class="image-overlay">
+              <div class="project-title">{{ project.title }}</div>
+            </div>
             <div
-              class="image-cover"
+              class="image"
               [style.backgroundImage]="'url(' + project.imageUrl + ')'"
             ></div>
+          </div>
+          <div class="desc">
+            <div class="desc-text">{{ project.desc }}</div>
           </div>
         </div>
       </div>

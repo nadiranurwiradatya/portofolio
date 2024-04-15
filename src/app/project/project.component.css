@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100vw;
   height: 597px;
-  background-image: url(https://i.pinimg.com/564x/f0/25/57/f02557f1f0b160c3e06b86a7a38fe76d.jpg);
+  background-image: url(https://i.pinimg.com/736x/b2/fb/21/b2fb21f206c56acc2007ed7e587d9770.jpg);
   background-size: cover;
 }
 
@@ -17,8 +17,8 @@
   height: 34vw;
   background-color: #fff;
   margin-top: 30px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(4px);
   border-left: 1px solid rgba(255, 255, 255, 0.18);
   border-right: 1px solid rgba(255, 255, 255, 0.18);
@@ -30,105 +30,7 @@
   overflow-y: auto;
   overflow-x: hidden; /* Menambahkan scroll vertikal saja */
 }
-.sidebar-container {
-  position: absolute;
-  top: 55px;
-  height: 457px;
-  width: 150px;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
-  border-bottom-left-radius: 10px;
-}
-.sidebar {
-  display: grid;
-  position: relative;
-  top: 55px;
-}
-.about p {
-  margin-top: 5px;
-  margin-left: 50px;
-  transition: all 1s ease;
-}
-.about {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
-  height: 25px;
-  width: 150px;
-  /* position: absolute;
-  top: 0px;
-  left: 25%; */
-  transition: background 0.3s ease, backdrop-filter 0.3s ease,
-    -webkit-backdrop-filter 0.3s ease; /* Menambahkan transisi untuk semua properti yang berubah */
-}
 
-.about:hover {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-
-.home {
-  height: 25px;
-  width: 150px;
-
-  border-right: solid #656565 1px;
-  /* position: absolute;
-  top: 0px;
-  left: 16.25%; */
-  color: var(--text-foreground);
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.home p {
-  margin-top: 5px;
-  margin-left: 50px;
-}
-.project {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
-  height: 25px;
-  width: 150px;
-  /* position: absolute;
-  top: 0px;
-  left: 33.75%; */
-  transition: background 0.3s ease, backdrop-filter 0.3s ease,
-    -webkit-backdrop-filter 0.3s ease; /* Menambahkan transisi untuk semua properti yang berubah */
-}
-.project p {
-  margin-top: 5px;
-  margin-left: 50px;
-}
-.project:hover {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.contact {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
-  height: 25px;
-  width: 150px;
-  /* position: absolute;
-  top: 0px;
-  left: 42.5%; */
-  transition: background 0.3s ease, backdrop-filter 0.3s ease,
-    -webkit-backdrop-filter 0.3s ease; /* Menambahkan transisi untuk semua properti yang berubah */
-}
-.contact p {
-  margin-top: 5px;
-  margin-left: 50px;
-}
-.contact:hover {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
 /* Ubah tampilan scrollbar */
 .container::-webkit-scrollbar {
   width: 10px; /* Lebar scrollbar */
@@ -146,7 +48,7 @@
 
 .menu {
   margin-top: 30px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -223,30 +125,31 @@
   margin-bottom: 20px;
 }
 .box-container {
+  gap: 5px;
   position: absolute;
-  right: 30px;
   width: 900px;
-  margin-top: 100px;
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .card {
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  background-color: rgba(96, 96, 96, 0.75);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.46);
+  border-radius: 2px;
+  border: 1px solid rgb(99, 22, 114);
+  cursor: pointer;
   position: relative;
-  height: 200px;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
   overflow: hidden;
-  padding: 1rem;
-  width: 11.5rem;
-  background-color: var(--bg-card);
-  border-radius: 5px;
+  top: 20px;
+  width: 250px;
+  max-width: 200px; /* Sesuaikan dengan kebutuhan Anda */
+  height: 233px;
+  overflow: hidden; /* Mengubah overflow menjadi auto */
+  transition: all 0.3s;
 }
 
 .image_container {
@@ -255,21 +158,27 @@
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  z-index: 1;
   width: 100%;
-  height: 100px;
-  backdrop-filter: blur(0px) saturate(180%);
-  -webkit-backdrop-filter: blur(0px) saturate(180%);
-  background-color: #fff;
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
-  transition: filter 0.3s ease; /* Animasi transisi saat mengubah filter */
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.image-cover {
-  border-radius: 12px;
+.image-overlay {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.image {
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -277,30 +186,53 @@
   position: absolute;
   z-index: 1;
   width: 100%;
-  height: 100px;
-  background-color: rgb(255, 255, 255);
-  transition: 0.3s ease; /* Animasi transisi saat mengubah filter */
-  opacity: 30%;
-  background-position: center;
-  opacity: 10%;
+  height: 120px;
+  transition: 0.3s;
 }
 
 .project-title {
+  text-align: center;
   font-family: poppins;
-  font-style: italic;
   z-index: 5;
   position: absolute;
   padding: 5px 10px; /* Padding judul */
   transition: opacity 0.3s; /* Animasi opacity */
-  width: 100px;
-  font-size: 20px;
+  width: 140px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
 }
 
-.card:hover .image-cover {
+.card:hover {
   transform: scale(1.1);
-  opacity: 100%;
-  mix-blend-mode: normal;
+}
+.card:hover .image {
+  transform: scale(1.1);
+}
+.card:hover .image-overlay {
+  opacity: 0;
 }
 .card:hover .project-title {
   opacity: 0;
+}
+
+.desc {
+  font-family: poppins;
+  color: #6c6c6c;
+  font-size: 16px;
+  position: relative;
+  padding: 10px;
+  width: 180px;
+  height: 83px; /* Sesuaikan dengan kebutuhan Anda */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  background-color: transparent;
+}
+.desc-text {
+  height: 100px;
 }

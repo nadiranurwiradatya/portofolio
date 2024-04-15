@@ -18,8 +18,4 @@ export class ProjectComponent implements OnInit {
       this.projectList = project;
     });
   }
-
-  goToHome(): void {
-    this.router.navigate(['']); // Navigasi ke modul proyek
-  }
 }

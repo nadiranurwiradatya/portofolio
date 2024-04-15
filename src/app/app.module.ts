@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { ProjectModule } from './project/project.module';
 import { SidebarModule } from './sidebar/sidebar.module';
+import { DetailModule } from './detail/detail.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { SidebarModule } from './sidebar/sidebar.module';
     HomeModule,
     ProjectModule,
     SidebarModule,
+    DetailModule,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
