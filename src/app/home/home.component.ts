@@ -8,8 +8,4 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   constructor(private router: Router) {}
-
-  goToProject(): void {
-    this.router.navigate(['/project']); // Navigasi ke modul proyek
-  }
 }

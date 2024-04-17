@@ -36,43 +36,56 @@
 .title {
   max-width: 900px;
   margin-left: 110px;
-  font-weight: 500;
 }
+/* .nama {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 64px;
+  font-weight: 700;
+  height: auto;
+} */
 
-.nama {
+/* .nama {
+  display: flex;
+  flex-direction: grid;
+  gap: 30px;
   font-family: poppins;
   font-size: 62px;
   font-weight: 600;
-  display: flex;
-  position: relative;
   background: #570f55;
   background: linear-gradient(to top left, #570f55 8%, #8302aa 65%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .highlight {
   margin-right: 5px;
   transition: transform 0.3s, margin 0.3s;
 }
 
-.hover-text {
+/* .hover-text {
+  height: 100px;
   font-family: poppins;
   margin-left: 300px;
   position: absolute;
-  top: 120px;
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.6s;
-}
+  top: 100px;
+  opacity: 100;
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  &:hover {
+    transform: scale(1.5);
+  }
+} */
 
-.nama:hover .hover-text {
+/* .nama:hover .hover-text {
   opacity: 1;
   transform: translateY(-100%);
   background: #ffdd00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: rgba(255, 208, 0, 0.9) 0px 0px 38px;
-}
+} */
 .lingkaran-container {
   display: flex;
   margin-top: 20px;
@@ -95,4 +108,128 @@
 
 .hijau {
   background-color: #00ca4e;
+}
+
+.nama {
+  width: 1000px;
+}
+.hello {
+  font-family: poppins;
+  font-size: 32px;
+  position: relative;
+  bottom: 30px;
+  color: #454545;
+  left: 4px;
+}
+.desc {
+  font-family: poppins;
+  font-size: 12px;
+  position: relative;
+  color: #454545;
+  top: 5px;
+  left: 4px;
+}
+.shimmer {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 74px;
+  display: inline;
+  z-index: 5;
+}
+
+.shimmer {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.5, #ffffff)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.5, #fff)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.5, #fff)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+.hover-text {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  position: absolute;
+  bottom: 300px;
+  font-size: 74px;
+  transform: translateY(50px);
+  z-index: 1;
+}
+
+.shimmer:hover ~ .hover-text {
+  opacity: 1;
+  transform: translateY(-30px);
 }

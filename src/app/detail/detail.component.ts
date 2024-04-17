@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
-import { ProjectDataService } from '../service/project.data.service';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
-  styleUrl: './detail.component.css',
+  styleUrls: ['./detail.component.css'],
 })
-export class DetailComponent {}
+export class DetailComponent implements OnInit {
+  constructor(
+    public dialogRef: MatDialogRef<DetailComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any // menerima data dari ProjectComponent
+  ) {}
+
+  ngOnInit(): void {}
+
+  closeDialog(): void {
+    this.dialogRef.close();
+  }
+}

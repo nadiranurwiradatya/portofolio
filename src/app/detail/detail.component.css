@@ -1,25 +1,54 @@
-/* project-detail.component.css */
-
-.project-detail {
-  /* Stil sesuai kebutuhan */
+.full-container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 10px;
+  color: aliceblue;
+  overflow-y: scroll; /* Mengaktifkan scroll vertikal */
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff rgba(255, 255, 255, 0);
 }
 
-.project-image {
-  /* Stil sesuai kebutuhan */
+.image {
+  width: 600px;
+  height: auto;
+}
+.desc {
+  width: 600px;
+}
+.title {
+  margin: 10px;
+  font-size: 32px;
+  font-family: poppins;
+  text-transform: lowercase;
+}
+.lingkaran-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  right: 280px;
+  cursor: pointer;
+}
+.lingkaran {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
-.project-description {
-  /* Stil sesuai kebutuhan */
+.merah {
+  background-color: #ff605c;
 }
 
-.project-title {
-  /* Stil sesuai kebutuhan */
+.kuning {
+  background-color: #ffbd44;
 }
 
-.project-info {
-  /* Stil sesuai kebutuhan */
-}
-
-.project-content {
-  /* Stil sesuai kebutuhan */
+.hijau {
+  background-color: #00ca4e;
 }

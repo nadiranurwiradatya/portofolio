@@ -10,6 +10,8 @@ import { HomeModule } from './home/home.module';
 import { ProjectModule } from './project/project.module';
 import { SidebarModule } from './sidebar/sidebar.module';
 import { DetailModule } from './detail/detail.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,8 +22,9 @@ import { DetailModule } from './detail/detail.module';
     ProjectModule,
     SidebarModule,
     DetailModule,
+    MatDialogModule,
   ],
-  providers: [provideClientHydration()],
+  providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
