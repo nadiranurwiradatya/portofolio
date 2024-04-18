@@ -9,9 +9,8 @@ export class ProjectDataService {
     {
       title: 'Resepedia',
       desc: 'ini adalah project pertama saya pada dunia UI/Ui yang bertemakan website yang menyediakan resep . ini adalah tugas akhir dari mata kuliah desain pengalaman pengguna , yang pada hasil akhirnya mendapatkan nilai A',
-      imageUrl:
-        'https://i.graphicmama.com/blog/wp-content/uploads/2020/07/23143645/17-Inspiring-Ui-Ux-Designer-Portfolios-That-Take-Design-to-the-Next-Level.jpg',
-      color: '#300494',
+      imageUrl: '../assets/img/resepedia.jpg',
+      color: '	rgb(250, 200, 152)',
     },
     {
       title: 'Aplikasi Diet',

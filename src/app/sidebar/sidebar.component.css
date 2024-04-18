@@ -96,3 +96,40 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+.menu {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  width: 90vw;
+  height: 55px;
+  position: absolute;
+  border-bottom: solid 0.5px gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.lingkaran-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.lingkaran {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.merah {
+  background-color: rgb(255, 69, 69);
+}
+
+.kuning {
+  background-color: rgb(255, 205, 56);
+}
+
+.hijau {
+  background-color: rgb(50, 255, 64);
+}

@@ -12,6 +12,7 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { DetailModule } from './detail/detail.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     SidebarModule,
     DetailModule,
     MatDialogModule,
+    AboutModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],

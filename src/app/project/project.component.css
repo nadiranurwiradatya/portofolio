@@ -3,7 +3,8 @@
   justify-content: center;
   width: 100vw;
   height: 597px;
-  background-image: url(https://i.pinimg.com/736x/b2/fb/21/b2fb21f206c56acc2007ed7e587d9770.jpg);
+  background-image: url(https://i.pinimg.com/736x/24/b3/c8/24b3c8cf160f3cb8d890ee7e87968d4a.jpg);
+
   background-size: cover;
 }
 
@@ -203,9 +204,9 @@
   color: #000000;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.1);
-}
+} */
 .card:hover .image {
   transform: scale(1.1);
 }
