@@ -8,10 +8,11 @@ import { DetailComponent } from './detail/detail.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'project', component: ProjectComponent },
-  { path: 'detail', component: DetailComponent },
-  { path: 'about', component: AboutComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' }, // Redirect kosong ke halaman beranda
+  { path: 'home', component: HomeComponent }, // Rute beranda
+  { path: 'project', component: ProjectComponent }, // Rute untuk komponen proyek
+  { path: 'detail', component: DetailComponent }, // Rute untuk komponen detail
+  { path: 'about', component: AboutComponent }, // Rute untuk komponen tentang
 ];
 
 @NgModule({

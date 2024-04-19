@@ -16,7 +16,7 @@
   justify-content: center;
   width: 90vw;
   height: 34vw;
-  background-color: #fff;
+  background-color: #dadada;
   margin-top: 30px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
@@ -85,7 +85,6 @@
   transition: opacity 0.3s, transform 0.6s;
   transform: translateY(0);
 }
-
 .nama:hover .hover-text {
   opacity: 1;
   transform: translateY(-100%);

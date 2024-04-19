@@ -51,6 +51,9 @@
   margin-top: 600px;
 }
 .profile {
+  background-size: 50%;
+  background-position: 20%;
+  background-image: url(https://st2.depositphotos.com/6879548/11905/v/950/depositphotos_119050944-stock-illustration-paper-line-vector-background-detailed.jpg);
   display: flex;
   width: auto;
   bottom: 10px;
@@ -77,8 +80,8 @@
   font-size: 32px;
 }
 .profile-title {
-  margin-top: 30px;
-  color: #000000;
+  margin-top: 25px;
+  color: #252525;
   cursor: pointer;
 }
 .profile-title:hover .highlight {
@@ -97,7 +100,7 @@
   transform: rotate(15deg);
 }
 .profile .black {
-  color: #000000;
+  color: #252525;
 }
 
 .profile .blue {
