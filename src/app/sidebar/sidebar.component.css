@@ -1,8 +1,9 @@
 .sidebar-container {
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   top: 32px;
-  left: 660px;
+  left: 690px;
   height: 50px;
 }
 .sidebar {
@@ -16,7 +17,7 @@
   margin-left: 20px;
   margin-right: 20px;
   transition: all 1s ease;
-  color: aliceblue;
+  color: #1c204b;
 }
 .about {
   height: 30px;
@@ -26,7 +27,7 @@
 }
 
 .about:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(28, 32, 75, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -45,11 +46,12 @@
   margin-top: 5px;
   margin-left: 20px;
   margin-right: 20px;
-  color: aliceblue;
+  color: #1c204b;
 }
 
 .home:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(28, 32, 75, 0.25);
+
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -68,10 +70,11 @@
   margin-top: 5px;
   margin-left: 20px;
   margin-right: 20px;
-  color: aliceblue;
+  color: #1c204b;
 }
 .project:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(28, 32, 75, 0.25);
+
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -89,10 +92,11 @@
   margin-top: 5px;
   margin-left: 20px;
   margin-right: 20px;
-  color: aliceblue;
+  color: #1c204b;
 }
 .contact:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(28, 32, 75, 0.25);
+
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -114,6 +118,7 @@
   display: flex;
   margin-top: 20px;
   margin-left: 20px;
+  width: 200px;
 }
 .lingkaran {
   width: 15px;
@@ -132,4 +137,34 @@
 
 .hijau {
   background-color: rgb(50, 255, 64);
+}
+/* Untuk layar kecil */
+@media only screen and (max-width: 768px) {
+  .lingkaran-container {
+    display: none; /* Sembunyikan lingkaran-container pada layar kecil */
+  }
+
+  .sidebar-container {
+    top: 18px;
+    left: 60px; /* Sembunyikan sidebar di luar layar */
+    width: 20px; /* Lebar sidebar */
+    height: 100vh; /* Tinggi sesuai viewport */
+    transition: left 0.3s ease; /* Animasi saat sidebar muncul */
+    z-index: 999; /* Pastikan sidebar muncul di atas konten lain */
+  }
+  .menu {
+    width: 400px;
+  }
+
+  .sidebar.show {
+    left: 0; /* Munculkan sidebar ketika class "show" ditambahkan */
+  }
+
+  .sidebar p {
+    color: #fff; /* Warna teks pada menu sidebar */
+    font-size: 10px; /* Ukuran font menu responsif */
+    padding: 1.5em 0; /* Ruang di atas dan bawah teks */
+    text-align: center; /* Tengahkan teks */
+    cursor: pointer; /* Pointer saat mengarahkan menu */
+  }
 }

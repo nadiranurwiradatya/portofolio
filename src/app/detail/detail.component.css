@@ -11,10 +11,29 @@
   scrollbar-width: thin;
   scrollbar-color: #dbdbdb #252525;
 }
+.lingkaran-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  right: 280px;
+  cursor: pointer;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  position: relative;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+}
 
 .image {
-  width: 600px;
-  height: auto;
+  height: 300px;
+  width: 550px;
+  object-fit: cover;
 }
 .desc {
   width: 600px;
@@ -25,15 +44,7 @@
   font-family: poppins;
   text-transform: lowercase;
 }
-.lingkaran-container {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  position: relative;
-  right: 280px;
-  cursor: pointer;
-}
+
 .lingkaran {
   width: 15px;
   height: 15px;

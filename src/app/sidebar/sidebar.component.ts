@@ -22,4 +22,7 @@ export class SidebarComponent {
   goToProject(): void {
     this.router.navigate(['/project']); // Navigasi ke modul proyek
   }
+  goToContact(): void {
+    this.router.navigate(['contact']); // Navigasi ke modul proyek
+  }
 }

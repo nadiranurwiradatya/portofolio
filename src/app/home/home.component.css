@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 597px;
+  min-height: 100vh;
   background-image: url(https://i.pinimg.com/736x/24/b3/c8/24b3c8cf160f3cb8d890ee7e87968d4a.jpg);
   background-size: cover;
 }
@@ -245,4 +245,30 @@
 .shimmer:hover ~ .hover-text {
   opacity: 1;
   transform: translateY(-30px);
+}
+@media only screen and (max-width: 708px) {
+  /* Gaya untuk layar seluler */
+  .fullcontainer {
+    height: auto; /* Mengubah tinggi ke auto untuk perangkat seluler */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 768px;
+    max-width: 450px;
+    width: 450px; /* Mengubah lebar untuk perangkat seluler */
+  }
+  .shimmer {
+    position: relative;
+    top: px;
+    margin-left: 230px;
+    max-width: 300px;
+    font-size: 30px;
+  }
+  .hello {
+    font-size: 18px;
+  }
 }

@@ -13,6 +13,7 @@ import { DetailModule } from './detail/detail.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AboutModule } from './about/about.module';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { AboutModule } from './about/about.module';
     DetailModule,
     MatDialogModule,
     AboutModule,
+    ContactModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
