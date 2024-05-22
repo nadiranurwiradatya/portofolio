@@ -6,7 +6,69 @@
   background-image: url(https://i.pinimg.com/736x/24/b3/c8/24b3c8cf160f3cb8d890ee7e87968d4a.jpg);
   background-size: cover;
 }
-
+.image {
+  background-image: url("../../assets/img/pin.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 800px;
+  right: 810px;
+  z-index: 30px;
+  width: 170px;
+  height: 170px;
+}
+.image-2 {
+  background-image: url("../../assets/img/camera.png");
+  background-size: cover;
+  position: absolute;
+  top: 200px;
+  left: 810px;
+  z-index: 30px;
+  width: 170px;
+  height: 170px;
+}
+.image-3 {
+  background-image: url("../../assets/img/clap.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 200px;
+  right: 810px;
+  z-index: 8;
+  width: 170px;
+  height: 170px;
+  filter: blur(2px);
+}
+.image-4 {
+  background-image: url("../../assets/img/ball.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  left: 810px;
+  z-index: 8;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 50px;
+}
+.image-5 {
+  background-image: url("../../assets/img/toga.png");
+  background-size: cover;
+  position: absolute;
+  top: 1250px;
+  left: 820px;
+  z-index: 1;
+  width: 170px;
+  filter: blur(2px);
+  height: 170px;
+}
+.image-6 {
+  background-image: url("../../assets/img/code.png");
+  background-size: cover;
+  position: absolute;
+  top: 1300px;
+  right: 820px;
+  z-index: 0;
+  width: 170px;
+  height: 170px;
+}
 .container {
   padding-bottom: 200px; /* Menambahkan padding bottom */
   position: relative;
@@ -64,7 +126,7 @@
   height: 280px;
   margin-bottom: 30px;
   border-radius: 10px;
-  border: black solid 1px;
+  outline: ridge 1px rgb(132, 121, 121);
   width: auto;
 }
 .profile-picture {
@@ -100,6 +162,23 @@
   height: 20px;
   border-radius: 4px;
   background-color: rgb(228, 66, 66);
+  transform: rotate(15deg);
+}
+.highlight {
+  padding: 0px 5px;
+  width: auto;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgb(228, 66, 66);
+  transform: rotate(15deg);
+}
+.blue {
+  padding: 0px 5px;
+  width: auto;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgb(66, 82, 228);
+
   transform: rotate(15deg);
 }
 .profile .black {
@@ -144,7 +223,15 @@
   margin-bottom: 10px;
   height: auto;
 }
+.about2 {
+  margin-top: 20px;
+  margin-left: 200px;
+  font-size: 64px;
+  margin-bottom: 10px;
+  height: auto;
+}
 .image-container {
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -156,7 +243,7 @@
 .image1 {
   width: 600px;
   height: 250px;
-  background-image: url(https://i.pinimg.com/564x/2f/00/ad/2f00ad64c6f1815605fe23e889fb643c.jpg);
+  background-image: url("../../assets/img/SMA.png");
   background-size: cover;
   position: relative;
   border-radius: 30px;
@@ -171,14 +258,16 @@
 .image3 {
   width: 280px;
   height: 250px;
-  background-image: url(https://i.pinimg.com/564x/b1/37/aa/b137aac0a57a5386cb21b70892c57933.jpg);
+  background-image: url("../../assets/img/gedung.png");
+  background-size: cover;
   position: relative;
   border-radius: 30px;
 }
 .image4 {
   width: 600px;
   height: 250px;
-  background-image: url(https://i.pinimg.com/564x/18/3b/01/183b01f19f5295384e96818f00d0ada3.jpg);
+  background-image: url("../../assets/img/UPN.png");
+  background-size: cover;
   position: relative;
   border-radius: 30px;
 }
@@ -282,8 +371,7 @@
   .profile-article-container {
     max-width: 370px;
   }
-  .profile-picture {
-  }
+
   .profile-desc {
     max-width: 380px;
     font-size: 10px;
@@ -296,6 +384,8 @@
     height: 768px;
     max-width: 450px;
     width: 450px; /* Mengubah lebar untuk perangkat seluler */
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .about {
     max-width: 370px;
@@ -308,4 +398,8 @@
   .name {
     width: 340px;
   }
+}
+.footer {
+  width: 900px;
+  height: 100px;
 }

@@ -17,4 +17,9 @@ export class DetailComponent implements OnInit {
   closeDialog(): void {
     this.dialogRef.close();
   }
+  isLightMode: boolean = false;
+
+  toggleMode() {
+    this.isLightMode = !this.isLightMode;
+  }
 }

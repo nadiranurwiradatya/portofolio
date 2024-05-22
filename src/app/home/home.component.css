@@ -127,6 +127,7 @@
   width: 1000px;
 }
 .hello {
+  cursor: default;
   font-family: poppins;
   font-size: 32px;
   position: relative;
@@ -135,6 +136,7 @@
   left: 4px;
 }
 .desc {
+  cursor: default;
   font-family: poppins;
   font-size: 12px;
   position: relative;
@@ -250,6 +252,7 @@
   /* Gaya untuk layar seluler */
   .fullcontainer {
     height: auto; /* Mengubah tinggi ke auto untuk perangkat seluler */
+    justify-content: center;
   }
 
   .container {
@@ -260,6 +263,9 @@
     height: 768px;
     max-width: 450px;
     width: 450px; /* Mengubah lebar untuk perangkat seluler */
+    padding: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .shimmer {
     position: relative;

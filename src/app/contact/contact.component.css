@@ -4,6 +4,7 @@
   width: 100vw;
   min-height: 100vh;
   background-image: url(https://i.pinimg.com/736x/24/b3/c8/24b3c8cf160f3cb8d890ee7e87968d4a.jpg);
+
   background-size: cover;
 }
 .container {
@@ -29,10 +30,42 @@
   overflow-y: auto;
   overflow-x: hidden; /* Menambahkan scroll vertikal saja */
 }
-.main {
+.article {
+  height: auto;
+  position: absolute;
+  top: 30px;
+  width: 870px;
+}
+
+.top-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.top-right {
+  font-size: 64px;
+  font-weight: 600;
+  color: #f8f8f8;
+  width: 600px;
+  height: 200px;
+  padding: 30px;
+  margin-top: 60px;
+}
+.top-left {
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  margin-left: 80px;
+  margin-top: 50px;
 }
 
 .up {
@@ -157,4 +190,15 @@
 
 .card4:hover .gmail {
   fill: white;
+}
+body {
+  font-family: system-ui, sans-serif;
+  perspective: 1500px;
+  background: linear-gradient(white, #efefef);
+}
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
 }

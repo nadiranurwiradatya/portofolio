@@ -6,9 +6,10 @@ import { AboutComponent } from './about.component';
 import { ProjectDataService } from '../service/project.data.service';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { SidebarModule } from '../sidebar/sidebar.module';
+import { DocumentationModule } from '../documentation/documentation.module';
 @NgModule({
   declarations: [AboutComponent],
-  imports: [CommonModule, SidebarModule],
+  imports: [CommonModule, SidebarModule, DocumentationModule],
   exports: [AboutComponent],
 })
 export class AboutModule {}

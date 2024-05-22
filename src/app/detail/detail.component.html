@@ -1,8 +1,17 @@
-<div class="full-container" [style.background-color]="data.color">
+<div
+  class="full-container core-container"
+  style="border-radius: 20px"
+  [ngClass]="{ 'light-mode': isLightMode }"
+  style="border-radius: 20px"
+>
   <div class="lingkaran-container">
     <div class="lingkaran merah" (click)="closeDialog()"></div>
     <div class="lingkaran kuning"></div>
     <div class="lingkaran hijau"></div>
+    <div class="toggle" (click)="toggleMode()">
+      <input type="checkbox" />
+      <label></label>
+    </div>
   </div>
   <div class="article">
     <div>

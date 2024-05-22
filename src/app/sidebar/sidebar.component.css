@@ -3,7 +3,7 @@
   position: absolute;
   z-index: 1;
   top: 32px;
-  left: 690px;
+  left: 710px;
   height: 50px;
 }
 .sidebar {
@@ -16,8 +16,6 @@
   margin-top: 5px;
   margin-left: 20px;
   margin-right: 20px;
-  transition: all 1s ease;
-  color: #1c204b;
 }
 .about {
   height: 30px;
@@ -30,6 +28,7 @@
   background: rgba(28, 32, 75, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  outline: ridge 2px rgba(30, 0, 162, 0.635);
 }
 
 .home {
@@ -51,6 +50,7 @@
 
 .home:hover {
   background: rgba(28, 32, 75, 0.25);
+  outline: ridge 2px rgba(30, 0, 162, 0.635);
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -74,6 +74,7 @@
 }
 .project:hover {
   background: rgba(28, 32, 75, 0.25);
+  outline: ridge 2px rgba(30, 0, 162, 0.635);
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -95,11 +96,25 @@
   color: #1c204b;
 }
 .contact:hover {
+  color: #fff;
   background: rgba(28, 32, 75, 0.25);
-
+  outline: ridge 2px rgba(30, 0, 162, 0.635);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+.contact:hover p {
+  color: rgb(255, 255, 255);
+}
+.home:hover p {
+  color: rgb(255, 255, 255);
+}
+.about:hover p {
+  color: rgb(255, 255, 255);
+}
+.project:hover p {
+  color: rgb(255, 255, 255);
+}
+
 .menu {
   margin-top: 30px;
   background: rgba(255, 255, 255, 0.5);
