@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 import { ProjectDataService } from '../service/project.data.service';
 import { DetailComponent } from '../detail/detail.component';
 import { MatDialog } from '@angular/material/dialog';
-import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-project',
@@ -30,33 +29,14 @@ export class ProjectComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      // Akses ke `document` hanya terjadi jika di browser
-      const element = document.querySelector('...'); // Sesuaikan dengan kebutuhanmu
-      // Operasi lainnya dengan `document`
-    }
-
-    // Subscribing to project data
     this.projectDataService.allproject$.subscribe((project) => {
       this.projectList = project;
     });
   }
 
-  // Method untuk membuka dialog
   openDialog(project) {
     this.dialog.open(DetailComponent, {
-      data: project, // Mengirim data proyek yang diklik ke dialog
+      data: project,
     });
-  }
-
-  // Method untuk menangani event scroll
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    const elementPos = this.elRef.nativeElement.offsetTop;
-    const scrollPos = window.pageYOffset;
-
-    if (scrollPos + window.innerHeight > elementPos) {
-      this.elRef.nativeElement.classList.add('fade-in');
-    }
   }
 }
