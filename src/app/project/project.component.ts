@@ -1,11 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ElementRef,
-  HostListener,
-  PLATFORM_ID,
-  Inject,
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProjectDataService } from '../service/project.data.service';
 import { DetailComponent } from '../detail/detail.component';
@@ -23,9 +16,7 @@ export class ProjectComponent implements OnInit {
   constructor(
     private router: Router,
     private projectDataService: ProjectDataService,
-    public dialog: MatDialog,
-    private elRef: ElementRef,
-    @Inject(PLATFORM_ID) private platformId: Object
+    public dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
