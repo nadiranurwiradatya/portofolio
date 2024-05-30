@@ -345,61 +345,40 @@
   color: #000; /* Warna teks tombol */
   text-decoration: none; /* Menghapus garis bawah teks */
 }
-@media only screen and (max-width: 708px) {
-  /* Gaya untuk layar seluler */
-  .fullcontainer {
-    min-height: 100vh;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-  }
-  .article {
-    max-width: 414px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .profile {
-    margin-top: 350px;
-    justify-content: center;
-    align-items: center;
-    max-width: 414px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .profile-article-container {
-    max-width: 370px;
-  }
 
-  .profile-desc {
-    max-width: 380px;
-    font-size: 10px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 768px;
-    max-width: 450px;
-    width: 450px; /* Mengubah lebar untuk perangkat seluler */
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .about {
-    max-width: 370px;
-  }
-  .name p {
-    font-size: 12px;
-    text-align: center;
-    margin-left: 50px;
-  }
-  .name {
-    width: 340px;
-  }
-}
 .footer {
   width: 900px;
   height: 100px;
+}
+/* Untuk layar seluler */
+@media only screen and (max-width: 708px) {
+  .container {
+    height: 70%;
+  }
+
+  .image-container .flex .image1,
+  .image-container .flex .image2,
+  .image-container .flex .image3,
+  .image-container .flex .image4 {
+    width: 100px; /* Menyesuaikan lebar gambar dengan lebar layar */
+    height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+    border-radius: 10px; /* Mengurangi radius sudut gambar */
+  }
+
+  /* Menyesuaikan overlay untuk tombol saat layar seluler */
+  .overlay {
+    padding: 5px 10px; /* Mengurangi padding tombol */
+  }
+
+  /* Menyesuaikan teks tombol saat layar seluler */
+  .detail-button {
+    padding: 5px 10px; /* Mengurangi padding tombol */
+    border-radius: 20px; /* Mengurangi radius sudut tombol */
+    font-size: 12px; /* Mengurangi ukuran teks tombol */
+  }
+  .article {
+    max-width: 90%; /* Mengurangi lebar artikel agar sesuai dengan layar ponsel */
+    margin: 20px auto; /* Memberi jarak di sekitar artikel */
+    padding: 20px; /* Menambahkan padding untuk meningkatkan keterbacaan */
+  }
 }
