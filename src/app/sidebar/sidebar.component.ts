@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ProjectDataService } from '../service/project.data.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,10 +8,7 @@ import { ProjectDataService } from '../service/project.data.service';
 })
 export class SidebarComponent {
   projectList: any[] = [];
-  constructor(
-    private router: Router,
-    private projectDataService: ProjectDataService
-  ) {}
+  constructor(private router: Router) {}
   goToHome(): void {
     this.router.navigate(['']); // Navigasi ke modul proyek
   }

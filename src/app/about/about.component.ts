@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { Router } from '@angular/router';
-import { ProjectDataService } from '../service/project.data.service';
+// import { ProjectDataService } from '../service/project.data.service';
 import { DocumentationDataService } from '../documentation/documentation.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
   documentationData: any[] = [];
   constructor(
     private router: Router,
-    private projectDataService: ProjectDataService,
+    // private projectDataService: ProjectDataService,
     private documentation: DocumentationDataService
   ) {}
   ngOnInit(): void {

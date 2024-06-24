@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about.component';
-import { ProjectDataService } from '../service/project.data.service';
+// import { ProjectDataService } from '../service/project.data.service';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { SidebarModule } from '../sidebar/sidebar.module';
 import { DocumentationModule } from '../documentation/documentation.module';

@@ -70,7 +70,7 @@
   height: 170px;
 }
 .container {
-  padding-bottom: 200px; /* Menambahkan padding bottom */
+  padding-bottom: 200px;
   position: relative;
   top: 56.5px;
   padding-bottom: 10px;
@@ -90,7 +90,7 @@
   border-bottom-left-radius: 10px;
   align-items: center;
   overflow-y: auto;
-  overflow-x: hidden; /* Menambahkan scroll vertikal saja */
+  overflow-x: hidden;
 }
 
 .container::-webkit-scrollbar {
