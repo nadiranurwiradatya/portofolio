@@ -11,7 +11,7 @@ export class ProjectDataService {
       type: 'UI/UX',
       title: 'Resepedia',
       desc: 'ini adalah project pertama saya pada dunia UI/Ui yang bertemakan website yang menyediakan resep . ini adalah tugas akhir dari mata kuliah desain pengalaman pengguna , yang pada hasil akhirnya mendapatkan nilai A',
-      imageUrl: '../assets/img/resepedia.jpg',
+      imageUrl: '../assets/img/resepedia.png',
       color: '	#BE3B20',
     },
     {
@@ -25,7 +25,7 @@ export class ProjectDataService {
       type: 'Angular Typescript',
       title: 'Onic E sport',
       desc: 'ini adalah projek saya semasa magang di Zetta bytes company , ini adalah website admin untuk menambahkan roaster baru dan biodata roaster, saya menerapkan array of object , form array , reactive form , Service Injection , Responsive Website, Search on Component , dan component component lain . ',
-      imageUrl: '../assets/img/onic_project.png',
+      imageUrl: '../assets/img/onic.png',
     },
     {
       type: 'Social Media Specialist',
@@ -37,7 +37,7 @@ export class ProjectDataService {
       type: 'Social Media Specialist',
       title: 'Himasisfo',
       desc: 'Jobdesc pada saat menjabat sebagai wakil kepala departemen yaitu mengelola , menyampaikan informasi melalui instagram himasisfo , dan juga project pengenalan pengurus kabinet ',
-      imageUrl: '../assets/img/himasisfo-project.png',
+      imageUrl: '../assets/img/himasisfo.png',
     },
   ];
 

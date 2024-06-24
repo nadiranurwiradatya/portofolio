@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent {
   projectList: any[] = [];
+  isLightMode: boolean = false;
   constructor(private router: Router) {}
   goToHome(): void {
     this.router.navigate(['']); // Navigasi ke modul proyek
@@ -20,5 +21,18 @@ export class SidebarComponent {
   }
   goToContact(): void {
     this.router.navigate(['contact']); // Navigasi ke modul proyek
+  }
+  toggleMode() {
+    this.isLightMode = !this.isLightMode;
+  }
+
+  toggleFullscreen() {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
   }
 }

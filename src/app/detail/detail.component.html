@@ -1,27 +1,16 @@
-<div
-  class="full-container core-container"
-  style="border-radius: 20px"
-  [ngClass]="{ 'light-mode': isLightMode }"
-  style="border-radius: 20px"
->
-  <div class="lingkaran-container">
-    <div class="lingkaran merah" (click)="closeDialog()"></div>
-    <div class="lingkaran kuning"></div>
-    <div class="lingkaran hijau"></div>
+<div class="full-container" [ngClass]="{ 'light-mode': isLightMode }">
+  <div class="header">
+    <div class="circle red" (click)="closeDialog()"></div>
+    <div class="circle yellow"></div>
+    <div class="circle green"></div>
     <div class="toggle" (click)="toggleMode()">
       <input type="checkbox" />
       <label></label>
     </div>
   </div>
-  <div class="article">
-    <div>
-      <img [src]="data.imageUrl" alt="Project Image" class="image" />
-    </div>
-    <div class="title">
-      <p>{{ data.title }}</p>
-    </div>
-    <div class="desc">
-      <p>{{ data.desc }}</p>
-    </div>
+  <div class="content">
+    <img [src]="data.imageUrl" alt="Project Image" class="image" />
+    <div class="title">{{ data.title }}</div>
+    <div class="desc">{{ data.desc }}</div>
   </div>
 </div>
