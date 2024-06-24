@@ -249,23 +249,12 @@
   transform: translateY(-30px);
 }
 @media only screen and (max-width: 708px) {
-  /* Gaya untuk layar seluler */
-  .fullcontainer {
-    height: auto; /* Mengubah tinggi ke auto untuk perangkat seluler */
-    justify-content: center;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 768px;
-    max-width: 450px;
-    width: 450px; /* Mengubah lebar untuk perangkat seluler */
-    padding: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
+    height: 70vh;
   }
   .shimmer {
     position: relative;

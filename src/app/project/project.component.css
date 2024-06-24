@@ -265,26 +265,16 @@
 }
 @media only screen and (max-width: 708px) {
   /* Gaya untuk layar seluler */
-  .fullcontainer {
-    height: auto; /* Mengubah tinggi ke auto untuk perangkat seluler */
-  }
-
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 768px;
-    max-width: 450px;
-    width: 450px; /* Mengubah lebar untuk perangkat seluler */
+    height: 100vh;
   }
   .box-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     height: 768px;
-    width: 420px;
-    margin: 0px;
-    margin-top: 50px;
+    width: 350px;
+    overflow: hidden;
   }
 }
 .fade-in {
