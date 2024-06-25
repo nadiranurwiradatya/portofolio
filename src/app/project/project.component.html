@@ -1,35 +1,38 @@
 <!-- app.component.html -->
 
 <div class="fullcontainer" data-aos="fade-up">
-  <app-sidebar></app-sidebar>
-  <div class="container">
-    <div class="box-container">
-      <div
-        class="project-container"
-        *ngFor="let project of projectList"
-        data-aos="fade-up"
-      >
-        <div class="card work" (click)="openDialog(project)">
-          <div class="img-section">
-            <img
-              style="width: 210px; height: 90px; object-fit: cover"
-              [src]="project.imageUrl"
-              alt="Project Image"
-            />
-          </div>
-          <!-- <div class="image-overlay"></div> -->
-          <div class="card-desc">
-            <div class="cardshape"></div>
-            <div class="card-header">
-              <div class="card-title">{{ project.type }}</div>
-              <div class="card-menu">
-                <div class="dotred"></div>
-                <div class="dotyellow"></div>
-                <div class="dotgreen"></div>
-              </div>
+  <div class="core-container">
+    <app-sidebar></app-sidebar>
+
+    <div class="container">
+      <div class="box-container">
+        <div
+          class="project-container"
+          *ngFor="let project of projectList"
+          data-aos="fade-up"
+        >
+          <div class="card work" (click)="openDialog(project)">
+            <div class="img-section">
+              <img
+                style="width: 210px; height: 90px; object-fit: cover"
+                [src]="project.imageUrl"
+                alt="Project Image"
+              />
             </div>
-            <div class="card-time">{{ project.title }}</div>
-            <p class="recent">{{ project.desc }}</p>
+            <!-- <div class="image-overlay"></div> -->
+            <div class="card-desc">
+              <div class="cardshape"></div>
+              <div class="card-header">
+                <div class="card-title">{{ project.type }}</div>
+                <div class="card-menu">
+                  <div class="dotred"></div>
+                  <div class="dotyellow"></div>
+                  <div class="dotgreen"></div>
+                </div>
+              </div>
+              <div class="card-time">{{ project.title }}</div>
+              <p class="recent">{{ project.desc }}</p>
+            </div>
           </div>
         </div>
       </div>

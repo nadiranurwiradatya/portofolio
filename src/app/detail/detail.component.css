@@ -1,15 +1,21 @@
+/* Gaya umum */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .full-container {
   width: 800px;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 20px;
   color: #e8e8e8;
   background-color: #171717;
   border-radius: 2px;
-  overflow-y: auto;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden; /* Tetap hidden untuk seluruh container */
 }
 
 .light-mode {
@@ -19,10 +25,11 @@
 
 .header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between; /* Menggunakan space-between untuk mengatur toggle di sisi kanan */
   align-items: center;
   width: 100%;
   margin-bottom: 20px;
+  padding-right: 20px; /* Menambahkan padding-right untuk menghindari overflow */
 }
 
 .circle {
@@ -47,6 +54,8 @@
 
 .toggle {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .toggle input[type="checkbox"] {
@@ -90,15 +99,21 @@
 .content {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: calc(70vh - 60px); /* Menyesuaikan tinggi konten */
+  overflow-y: auto; /* Scroll vertikal jika konten melebihi tinggi */
+  padding-right: 20px; /* Menambahkan padding-right untuk menghindari pemotongan konten */
 }
 
 .image {
+  justify-content: center;
   width: 100%;
   max-width: 600px;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 20px;
+  align-self: center;
 }
 
 .title {

@@ -1,22 +1,28 @@
+/* Gaya umum */
+* {
+  font-family: "Poppins", sans-serif;
+}
 .fullcontainer {
   display: flex;
   justify-content: center;
   width: 100vw;
   min-height: 100vh;
-  background-image: url(https://i.pinimg.com/736x/24/b3/c8/24b3c8cf160f3cb8d890ee7e87968d4a.jpg);
+  background-image: url(https://i.pinimg.com/564x/5e/48/27/5e482778739d99a90c3eda38182175ac.jpg);
   background-size: cover;
 }
-
+.core-container {
+  margin-top: 6vh;
+}
 .container {
   position: relative;
   top: 56.5px;
   padding-bottom: 10px;
   justify-content: center;
   width: 90vw;
-  height: 34vw;
-  background-color: #dadada;
+  height: 70vh;
+  background-color: #fff;
   margin-top: 30px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(4px);
   border-left: 1px solid rgba(255, 255, 255, 0.18);
@@ -26,8 +32,8 @@
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   align-items: center;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden; /* Menambahkan scroll vertikal saja */
 }
 
 .container::-webkit-scrollbar {
@@ -46,7 +52,7 @@
 
 .menu {
   margin-top: 30px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -151,9 +157,7 @@
 .card:hover .img-section {
   transform: translateY(-1em);
 }
-.card:hover .card-desc {
-  outline: ridge 4px rgb(151, 151, 255);
-}
+
 /* .card:hover .cardshape {
   border: solid 1px rgb(151, 151, 255);
 } */
@@ -162,7 +166,9 @@
 .mdc-dialog__surface {
   border-radius: 20px !important; /* Atur radius border sesuai kebutuhan Anda */
 }
-
+.card:hover .card-desc {
+  outline: ridge 4px rgb(255, 0, 21);
+}
 .card-desc {
   width: 180px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -173,7 +179,8 @@
   top: -15px;
   display: grid;
   gap: 10px;
-  background: var(--primary-clr);
+  color: rgb(216, 216, 216);
+  background-color: rgb(36, 36, 36);
 }
 /* .cardshape {
   position: absolute;

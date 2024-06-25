@@ -1,10 +1,40 @@
+/* Gaya umum */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .fullcontainer {
   display: flex;
   justify-content: center;
   width: 100vw;
   min-height: 100vh;
-  background-image: url(https://i.pinimg.com/736x/24/b3/c8/24b3c8cf160f3cb8d890ee7e87968d4a.jpg);
+  background-image: url(https://i.pinimg.com/564x/5e/48/27/5e482778739d99a90c3eda38182175ac.jpg);
   background-size: cover;
+}
+.core-container {
+  margin-top: 6vh;
+}
+.container {
+  position: relative;
+  top: 56.5px;
+  padding-bottom: 10px;
+  justify-content: center;
+  width: 90vw;
+  height: 70vh;
+  background-color: #fff;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(4px);
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: none;
+  display: flex;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden; /* Menambahkan scroll vertikal saja */
 }
 .image {
   background-image: url("../../assets/img/pin.png");
@@ -68,29 +98,6 @@
   z-index: 0;
   width: 170px;
   height: 170px;
-}
-.container {
-  padding-bottom: 200px;
-  position: relative;
-  top: 56.5px;
-  padding-bottom: 10px;
-  justify-content: center;
-  width: 90vw;
-  height: 34vw;
-  background-color: #fff;
-  margin-top: 30px;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(4px);
-  border-left: 1px solid rgba(255, 255, 255, 0.18);
-  border-right: 1px solid rgba(255, 255, 255, 0.18);
-  border-top: none;
-  display: flex;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  align-items: center;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .container::-webkit-scrollbar {

@@ -1,23 +1,24 @@
-<header class="menu">
+<div class="full-sidebar">
   <div class="lingkaran-container">
     <div class="lingkaran merah"></div>
     <div class="lingkaran kuning"></div>
     <div class="lingkaran hijau" (click)="toggleFullscreen()"></div>
   </div>
-</header>
-<div class="sidebar-container">
-  <div class="sidebar">
-    <div class="home" (click)="goToHome()">
-      <p>Home</p>
-    </div>
-    <div class="about" (click)="goToAbout()">
-      <p>About</p>
-    </div>
-    <div class="project" (click)="goToProject()">
-      <p>Project</p>
-    </div>
-    <div class="contact" (click)="goToContact()">
-      <p>Contact</p>
+
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="home" (click)="goToHome()">
+        <p>Home</p>
+      </div>
+      <div class="about" (click)="goToAbout()">
+        <p>About</p>
+      </div>
+      <div class="project" (click)="goToProject()">
+        <p>Project</p>
+      </div>
+      <div class="contact" (click)="goToContact()">
+        <p>Contact</p>
+      </div>
     </div>
   </div>
 </div>
