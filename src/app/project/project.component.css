@@ -273,7 +273,11 @@
 @media only screen and (max-width: 708px) {
   /* Gaya untuk layar seluler */
   .container {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
   }
   .box-container {
     display: flex;

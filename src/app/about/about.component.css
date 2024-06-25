@@ -360,32 +360,39 @@
 /* Untuk layar seluler */
 @media only screen and (max-width: 708px) {
   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  .article {
+    width: 90%;
+    height: 100vh;
+    position: absolute;
+    top: 5%;
+  }
+  .name {
+    display: none;
+  }
+  .profile {
+    width: 100%;
+  }
+  .profile-desc {
+    font-size: 12px;
+  }
+  .profile-picture {
+    width: 100%;
     height: 70%;
   }
 
-  .image-container .flex .image1,
-  .image-container .flex .image2,
-  .image-container .flex .image3,
-  .image-container .flex .image4 {
-    width: 100px; /* Menyesuaikan lebar gambar dengan lebar layar */
-    height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
-    border-radius: 10px; /* Mengurangi radius sudut gambar */
+  .name {
+    width: 50%; /* Lebar informasi nama di desktop */
   }
-
-  /* Menyesuaikan overlay untuk tombol saat layar seluler */
-  .overlay {
-    padding: 5px 10px; /* Mengurangi padding tombol */
-  }
-
-  /* Menyesuaikan teks tombol saat layar seluler */
-  .detail-button {
-    padding: 5px 10px; /* Mengurangi padding tombol */
-    border-radius: 20px; /* Mengurangi radius sudut tombol */
-    font-size: 12px; /* Mengurangi ukuran teks tombol */
-  }
-  .article {
-    max-width: 90%; /* Mengurangi lebar artikel agar sesuai dengan layar ponsel */
-    margin: 20px auto; /* Memberi jarak di sekitar artikel */
-    padding: 20px; /* Menambahkan padding untuk meningkatkan keterbacaan */
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    display: none;
   }
 }

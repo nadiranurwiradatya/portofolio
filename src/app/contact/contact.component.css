@@ -208,3 +208,18 @@ body {
   justify-content: center;
   gap: 15px;
 }
+@media only screen and (max-width: 708px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  .article {
+    width: 90%;
+  }
+  .top-right {
+    display: none;
+  }
+}
